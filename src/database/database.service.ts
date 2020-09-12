@@ -19,7 +19,7 @@ export class Database{
 
     constructor(){
         const connection = nano({
-            url: true ? 'http://admin:123456@localhost:5984' : 'http://admin:EgetUgMKxKfVE8apUfha@localhost:5984',
+            url: false ? 'http://admin:123456@localhost:5984' : 'http://admin:jQaassBBLYxop7dkxGhK@localhost:5984',
         });
         this.clientAccount = connection.use('rxa_clients_accounts');
         this.accountingEntry = connection.use('rxa_accounting_entries');
